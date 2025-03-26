@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        body{
+            background: linear-gradient(to bottom, #4CAF50, #A5D6A7); 
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            
+            flex-direction: column;
+        }
+        .container{
+            display: flex;
+            justify-content: center; /* Centra horizontalmente */
+            align-items: center; /* Centra verticalmente */
+            flex-direction: column; /* Disposición en columna */
+            width: 80%; /* Limita el ancho */
+            padding-top: 20px;
+        }
+        .text{
+            font-size: 10em;
+            font-family: serif;
+            color: #1B5E20; 
+            text-shadow: 10px 10px 20px black;
+            align-self: flex-start;  /* Alinea el texto a la izquierda */
+            margin-left: 100px; /* Añade espacio a la izquierda */
+        }
+        .titulo_texto{
+            text-align: center;  /* Centra el texto */
+            font-size: 2em;
+            color: white;
+            text-shadow: 0px 0px 20px green, 0px 0px 20px rgb(151, 224, 151);
+            display: flex;
+            flex-direction: column; /* Coloca el texto encima de la imagen */
+            align-items: center;
+            margin-left: 100px; /* Mueve el contenido a la izquierda */
+        }
+        .titulo_texto img{
+            width: 150px; 
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%; 
+            border: 5px solid yellow;
+            margin-top: 10px; /* Añadido espacio entre el texto y la imagen */
+        }
+        .texto_aprender{
+            text-align: left;  /* Alinea el texto a la izquierda */
+            font-size: 3em;
+            color: white;
+            margin-left: 100px;  /* Alinea el texto a la izquierda */
+            margin-top: 20px;  
+            text-shadow: 0px 0px 20px green, 0px 0px 20px rgb(151, 224, 151);
+        }
+        button{
+            background-color: rgb(8, 117, 185);
+            color: white;
+            font-size: 2em;
+            padding: 10px 20px;
+            width: 250px;
+            margin-top: 40px; /* Más espacio entre los elementos */
+            margin-left: 100px; /* Alinea el botón a la izquierda */
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: rgb(5, 90, 150);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="titulo_texto">
+            Jose Ariel Vasquez
+            <img src="https://images.pexels.com/photos/2014422/pexels-photo-2014422.jpeg" alt="Atardecer">
+        </div>
+    </div>
+    <div class="text">
+        CSS
+    </div>
+    <div class="texto_aprender">Aprende practicando</div>
+    <button><i class="fa-solid fa-house"></i> INICIO</button>
+</body>
+</html>
